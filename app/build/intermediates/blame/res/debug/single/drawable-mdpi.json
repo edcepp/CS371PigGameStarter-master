@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/eepp/up/cs371/Lab06Game/CS371PigGameStarter-master/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
+        "source": "/home/eepp/up/cs371/Lab06Game/CS371PigGameStarter-master/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/eepp/up/cs371/Lab06Game/CS371PigGameStarter-master/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_action_search.png",
+        "source": "/home/eepp/up/cs371/Lab06Game/CS371PigGameStarter-master/app/src/main/res/drawable-mdpi/ic_action_search.png"
+    }
+]

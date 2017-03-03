@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/eepp/Android/Sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="/home/eepp/up/cs371/Lab06Game/CS371PigGameStarter-master/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0_0a3a64cd2c766913aa194bf7cb9d82b0695ebdf8.jar" />
+    </item>
+
+</items>
