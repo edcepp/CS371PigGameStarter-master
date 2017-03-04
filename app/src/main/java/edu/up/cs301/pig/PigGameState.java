@@ -24,6 +24,10 @@ public class PigGameState extends GameState {
 
     public PigGameState(PigGameState aGameState) {
         myID = aGameState.getID();
+        myPlayer00Score = aGameState.getPlayer00Score();
+        myPlayer01Score = aGameState.getPlayer01Score();
+        myRunningTotal = aGameState.getRunningTotal();
+        myCurrentDie = aGameState.getCurrentDie();
     }
 
     // ********** getters
