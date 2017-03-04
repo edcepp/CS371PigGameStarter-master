@@ -1,10 +1,11 @@
 package edu.up.cs301.pig;
-
+import edu.up.cs301.game.infoMsg.GameState;
 /**
  * Created by eepp on 3/4/17.
  */
 
-public class PigGameState {
+
+public class PigGameState extends GameState {
     private int myID;
     private int myPlayer00Score;
     private int myPlayer01Score;
@@ -43,21 +44,21 @@ public class PigGameState {
         return myCurrentDie;
     }
 
-    // ********** putters
+    // ********** setters
 
-    public void putID (int anID){
+    public void setID (int anID){
         myID = anID;
     }
-    public void putPlayer00Score (int aScore){
+    public void setPlayer00Score (int aScore){
         myPlayer00Score = aScore;
     }
-    public void putPlayer01Score (int aScore){
+    public void setPlayer01Score (int aScore){
         myPlayer01Score = aScore;
     }
-    public void putRunningTotal (int aTotal){
+    public void setRunningTotal (int aTotal){
         myRunningTotal = aTotal;
     }
-    public void putCurrentDie (int aDie){
+    public void setCurrentDie (int aDie){
         myCurrentDie = aDie;
     }
 
