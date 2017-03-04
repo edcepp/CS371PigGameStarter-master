@@ -60,4 +60,5 @@ public class PigGameState {
     public void putCurrentDie (int aDie){
         myCurrentDie = aDie;
     }
+
 }
