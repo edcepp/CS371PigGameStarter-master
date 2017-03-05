@@ -63,6 +63,7 @@ public class PigLocalGame extends LocalGame {
         else if (action instanceof PigRollAction){
             Random randomGenerator = new Random();
             int dieValue = randomGenerator.nextInt(6) + 1;
+            myGameState.setCurrentDie(dieValue);
             int player = myGameState.getID();
             if (dieValue == 1){
                 myGameState.setRunningTotal(0);
@@ -97,10 +98,10 @@ public class PigLocalGame extends LocalGame {
     protected String checkIfGameOver() {
         //TODO  You will implement this method
         if (myGameState.getPlayer00Score() >= 50) {
-            return playerNames[0] + "won with a score of " + myGameState.getPlayer00Score();
+            return playerNames[0] + " won with a score of " + myGameState.getPlayer00Score();
         }
         else if (myGameState.getPlayer01Score() >= 50){
-            return playerNames[1] + "won with a score of " + myGameState.getPlayer01Score();
+            return playerNames[1] + " won with a score of " + myGameState.getPlayer01Score();
         }
         else {
             return null;

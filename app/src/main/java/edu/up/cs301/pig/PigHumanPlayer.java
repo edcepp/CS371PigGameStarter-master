@@ -88,9 +88,15 @@ public class PigHumanPlayer extends GameHumanPlayer implements OnClickListener {
                     dieImageButton.setImageResource(R.drawable.face6);
                     break;
             }
+            if (gameState.getID() == 0) {
+                dieImageButton.setBackgroundColor(Color.BLUE);
+            }
+            else {
+                dieImageButton.setBackgroundColor(Color.GREEN);
+            }
         }
         else {
-            flash(Color.RED, 2);
+            flash(Color.RED, 1000);
             return;
         }
 

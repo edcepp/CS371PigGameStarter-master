@@ -43,6 +43,7 @@ public class PigComputerPlayer extends GameComputerPlayer {
             action = new PigHoldAction(this);
         }
         else {
+            sleep(2000);
             action = new PigRollAction(this);
         }
         game.sendAction(action);
