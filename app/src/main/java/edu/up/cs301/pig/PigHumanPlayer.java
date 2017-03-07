@@ -97,7 +97,6 @@ public class PigHumanPlayer extends GameHumanPlayer implements OnClickListener {
         }
         else {
             flash(Color.RED, 1000);
-            return;
         }
 
     }//receiveInfo
@@ -117,7 +116,7 @@ public class PigHumanPlayer extends GameHumanPlayer implements OnClickListener {
             game.sendAction(new PigRollAction(this));
         }
         else {
-            // TBD report error
+            // TBD report internal error - shouldn't happen so maybe drop this check
         }
     }// onClick
 
