@@ -68,6 +68,11 @@ public class PigHumanPlayer extends GameHumanPlayer implements OnClickListener {
             playerScoreTextView.setText(gameState.getPlayer00Score() + "");
             oppScoreTextView.setText(gameState.getPlayer01Score() + "");
             turnTotalTextView.setText(gameState.getRunningTotal() + "");
+            if (gameState.getPlayer00Score() >= 50){
+                messageTextView.setTextColor(Color.RED);
+                messageTextView.setTextSize(32);
+                messageTextView.setText("Great Job HUMAN!!");
+            }
             switch (gameState.getCurrentDie()) {
                 case 1:
                     dieImageButton.setImageResource(R.drawable.face1);
