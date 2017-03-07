@@ -38,9 +38,9 @@ public class PigMainActivity extends GameMainActivity {
             public GamePlayer createPlayer(String name) {
                 return new PigHumanPlayer(name);
             }});
-        playerTypes.add(new GamePlayerType("Computer Player") {
+        playerTypes.add(new GamePlayerType("Smart Computer Player") {
             public GamePlayer createPlayer(String name) {
-                return new PigComputerPlayer(name);
+                return new PigComputerSmartPlayer(name);
             }});
 
         // Create a game configuration class for Pig:
