@@ -39,11 +39,11 @@ public class PigComputerPlayer extends GameComputerPlayer {
         Random randomGenerator = new Random();
         int randomValue = randomGenerator.nextInt(2);
         GameAction action;
-        if (randomValue == 0) {
+        sleep(2000);
+         if (randomValue == 0) {
             action = new PigHoldAction(this);
         }
         else {
-            sleep(2000);
             action = new PigRollAction(this);
         }
         game.sendAction(action);
