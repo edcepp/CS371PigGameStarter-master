@@ -37,9 +37,11 @@ public class PigComputerSmartPlayer extends GameComputerPlayer {
 
             sleep(2000);
             GameAction action;
+            // computer player has won if it holds
             if (gameState.getRunningTotal() + gameState.getPlayer01Score() >= 50){
                 action = new PigHoldAction(this);
             }
+            // max running score to 14
             else {
                 double holdThreshold = (RUNNING_MAX - gameState.getRunningTotal());
                 if (holdThreshold < 0.0) {
