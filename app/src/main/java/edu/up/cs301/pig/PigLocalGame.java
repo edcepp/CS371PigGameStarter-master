@@ -31,6 +31,7 @@ public class PigLocalGame extends LocalGame {
     @Override
     protected boolean canMove(int playerIdx) {
         //TODO  You will implement this method
+        Log.i("PigLocalGame.canMove"," ");
         return playerIdx == myGameState.getID();
     }
 
@@ -42,6 +43,7 @@ public class PigLocalGame extends LocalGame {
     @Override
     protected boolean makeMove(GameAction action) {
         //TODO  You will implement this method
+        Log.i("PigLocalGame.makeMove"," ");
         if (action instanceof PigHoldAction) {
             int playerID = myGameState.getID();
             if (playerID == 0){
@@ -84,6 +86,7 @@ public class PigLocalGame extends LocalGame {
     @Override
     protected void sendUpdatedStateTo(GamePlayer p) {
         //TODO  You will implement this method
+        Log.i("PigLocalGame.sendUpdate"," ");
         p.sendInfo(new PigGameState(myGameState));
     }//sendUpdatedSate
 
@@ -97,6 +100,7 @@ public class PigLocalGame extends LocalGame {
     @Override
     protected String checkIfGameOver() {
         //TODO  You will implement this method
+        Log.i("PigLocalGame.chxOver"," ");
         if (myGameState.getPlayer00Score() >= 50) {
             return playerNames[0] + " won with a score of " + myGameState.getPlayer00Score();
         }

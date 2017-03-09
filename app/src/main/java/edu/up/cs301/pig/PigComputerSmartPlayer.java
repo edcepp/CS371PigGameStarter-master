@@ -6,6 +6,8 @@ import edu.up.cs301.game.infoMsg.GameInfo;
 import edu.up.cs301.game.util.Tickable;
 import java.util.Random;
 
+import android.util.Log;
+
 /**
  * Created by eepp on 3/7/17.
  */
@@ -29,6 +31,7 @@ public class PigComputerSmartPlayer extends GameComputerPlayer {
     @Override
     protected void receiveInfo(GameInfo info) {
         // TODO  You will implement this method
+        Log.i("PigComputerPlayer.recei"," ");
         if (info instanceof PigGameState) {
             PigGameState gameState = (PigGameState) info;
             if (playerNum != gameState.getID()) {

@@ -14,6 +14,8 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.view.View.OnClickListener;
 
+import android.util.Log;
+
 /**
  * A GUI for a human to play Pig. This default version displays the GUI but is incomplete
  *
@@ -62,6 +64,7 @@ public class PigHumanPlayer extends GameHumanPlayer implements OnClickListener {
     @Override
     public void receiveInfo(GameInfo info) {
         //TODO You will implement this method to receive state objects from the game
+        Log.i("PigHumanPlayer.receive"," ");
         if (info instanceof PigGameState) {
             PigGameState gameState = (PigGameState) info;
             //TBD assumes I am player 00 - not good
@@ -115,6 +118,7 @@ public class PigHumanPlayer extends GameHumanPlayer implements OnClickListener {
      */
     public void onClick(View button) {
         //TODO  You will implement this method to send appropriate action objects to the game
+        Log.i("PigHumanPlayer.onClick"," xxx");
         if (button == holdButton){
             game.sendAction(new PigHoldAction(this));
         } else if (button == dieImageButton) {
